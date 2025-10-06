@@ -19,13 +19,6 @@ A web application that allows users to search for movies and view detailed infor
 - JavaScript (ES6+)
 - OMDb API for movie data
 
-## How to Use
-
-1. Clone this repository
-2. Open `index.html` in your web browser
-3. Enter a movie title in the search field
-4. Click the "Search" button or press Enter
-5. Browse the results and click on any movie card to see detailed information
 
 ## API Information
 
