@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Movie Search</h1>
+            <div class="search-container">
+                <input type="text" id="movie-search" placeholder="Enter a movie title...">
+                <button id="search-btn"><i class="fas fa-search"></i> Search</button>
+            </div>
+        </header>
+        
+        <main>
+            <div id="results-container">
+                <div id="initial-message">
+                    <i class="fas fa-film fa-4x"></i>
+                    <p>Enter a movie title to search</p>
+                </div>
+                <div id="movies-container"></div>
+                <div id="no-results" class="hidden">
+                    <i class="fas fa-exclamation-triangle fa-4x"></i>
+                    <p>No movies found. Try another search term.</p>
+                </div>
+                <div id="error-message" class="hidden">
+                    <i class="fas fa-exclamation-circle fa-4x"></i>
+                    <p>An error occurred. Please try again later.</p>
+                </div>
+            </div>
+            
+            <!-- Movie Details Modal -->
+            <div id="movie-modal" class="modal hidden">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <div id="modal-content-container">
+                        <!-- Modal content will be dynamically inserted here -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>Movie data provided by <a href="https://www.omdbapi.com/" target="_blank">OMDb API</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
